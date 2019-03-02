@@ -31,7 +31,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background: url(../img/bg-pattern.png), linear-gradient(to-left, #7b4397, #dc2430)">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Top</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,25 +56,27 @@
       </div>
     </div>
   </nav>
-  <header class="masthead">
+
+  <header class="masthead" id="temp">
+        <div class="container h-100">
           <form class="modal-content" action="/action_page.php">
             <div class="container">
               <h1 style="color: black;">Sign Up</h1>
               <p style="color: black;">Please fill in this form to create an account.</p>
               <hr>
-              <label for="userName" style="color: black;"><b>Username</b></label>
+              <label style="color: black;"><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="userName" required>
 
-              <label for="birthday" style="color: black;"><b>Birthday</b></label>
+              <label style="color: black;"><b>Birthday</b></label>
               <input type="date" name="birthday" required>
 
-              <label for="email" style="color: black;"><b>Email</b></label>
+              <label style="color: black;"><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required>
         
-              <label for="psw" style="color: black;"><b>Password</b></label>
+              <label style="color: black;"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
         
-              <label for="psw-repeat" style="color: black;"><b>Repeat Password</b></label>
+              <label style="color: black;"><b>Repeat Password</b></label>
               <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
               
               <label>
@@ -89,7 +91,36 @@
               </div>
             </div>
           </form>
-        </header>
+        </div>
+</header>
+
+        <footer id="footerCrap">
+                <div class="container" id="footerStyles">
+                  <p>&copy; Your Website 2019. All Rights Reserved.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Terms</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+              </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.min.js"></script>
 
 </body>
 </html>
