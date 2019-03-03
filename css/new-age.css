@@ -114,6 +114,9 @@ section h2 {
 }
 
 @media (min-width: 992px) {
+  body{
+    background: url(../img/bg-pattern.png),linear-gradient(to left,#1056d8,#2fd4a3de);
+  }
   #mainNav {
     border-color: transparent;
     background-color: transparent;

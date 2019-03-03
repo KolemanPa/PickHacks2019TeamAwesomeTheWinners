@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Discussion board</title>
+  <title>Discussions</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,52 +29,68 @@
 </head>
 
 <body id="page-top" class="picture">
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto" id="scrollThingy">
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#page-top" style="color: black; font-weight: bold; font-size:20px">Home</a>
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#page-top" style="color: black; font-weight: bold; font-size:20px">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#features" style="color: black; font-weight: bold; font-size:20px">Features</a>
+                <a class="nav-link js-scroll-trigger" href="#features" style="color: black; font-weight: bold; font-size:20px">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="index.html#contact" style="color: black; font-weight: bold; font-size:20px">Contact</a>
+                <a class="nav-link js-scroll-trigger" href="#contact" style="color: black; font-weight: bold; font-size:20px">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="dashboard.html" style="color: black; font-weight: bold; font-size:20px">dashboard.html</a>
-          </ul>
+                <a class="nav-link js-scroll-trigger" href="dashboard.html" style="color: black; font-weight: bold; font-size:20px">Dashboard</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
 
 
 
 
-
-  <div class="container wrapper">
-      <form class="modal-content">
+  <div class="container">
+      <form class="modal-content" action="discussion.php" method="post">
           <div class="container">
-              <div class="sports">
-                  <input type="button" value="Football" onclick="footballPost()">
+                <input type="button" value="Football" onclick="footballPost()">
                   <input type="button" value="Basketball" onclick="basketballPost()">
                   <input type="button" value="Soccer" onclick="soccerPost()">
                   <input type="button" value="Hockey" onclick="hockeyPost()">
-              </div>
-              <div  id="posts">
-
-              </div>
-
+                  <input type="button" value="CLICK ME" onclick="generatePosts('HELLOWJFJDL:SJFJK')">
             </div>
-            </form>
+                <div onclick="generatePosts('HELLO')" id="posts">
+                    <p>hey</p>
+                </div>
+                 <div class="container">   
+
+                <label style="color: black;"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="userName" required>
+
+                
+                <label style="color: black;"><b>Sport?</b></label>
+                <input type="text" placeholder="Please type what sport you want to play" name="sport" required>
+
+                
+                <label style="color: black;"><b>Message</b></label>
+                <input type="text" placeholder="Enter what kind of game you want to play (competitive, family-friendly, etc)" name="message" required>
+
+                        
+                <label style="color: black;"><b>Zip</b></label>
+                <input type="text" placeholder="exe: 65721" name="zip" required>
             </div>
-            </nav>
+        </form>
+    </div>
 <br>
 <br>          
 <br/>

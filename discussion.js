@@ -10,6 +10,7 @@ function footballPost(){
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
+
 function generatePosts(arr){
     if(arr){
         arr.forEach(obj => {
@@ -20,6 +21,7 @@ function generatePosts(arr){
         });
     }
 }
+
 
 function basketballPost(){
     var xmlhttp = new XMLHttpRequest();
@@ -47,3 +49,4 @@ function baseballPost(){
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
+
