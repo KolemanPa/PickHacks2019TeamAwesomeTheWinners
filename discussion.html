@@ -4,12 +4,11 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Welcome to Sport Book!</title>
+  <title>Discussion board</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +29,6 @@
 </head>
 
 <body id="page-top" class="picture">
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -51,53 +49,44 @@
                 <a class="nav-link js-scroll-trigger" href="index.html#contact" style="color: black; font-weight: bold; font-size:20px">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="signUp.html" style="color: black; font-weight: bold; font-size:20px">Sign up</a>
-            </li>
+                <a class="nav-link js-scroll-trigger" href="dashboard.html" style="color: black; font-weight: bold; font-size:20px">dashboard.html</a>
           </ul>
         </div>
       </div>
-    </nav>
 
 
 
 
-  <div class="container">
-      <form class="modal-content" action="register.php" method="post">
-        <div class="container">
-          <h1 style="color: black;">Sign Up</h1>
-          <p style="color: black;">Please fill in this form to create an account.</p>
-          <hr>
-          <label style="color: black;"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="userName" required>
 
-          <label style="color: black;"><b>Birthday</b></label>
-          <input type="date" name="birthday" required>
+  <div class="container wrapper">
+      <form class="modal-content">
+          <div class="container">
+              <div class="sports">
+                  <input type="button" value="Football" onclick="footballPost()">
+                  <input type="button" value="Basketball" onclick="basketballPost()">
+                  <input type="button" value="Soccer" onclick="soccerPost()">
+                  <input type="button" value="Hockey" onclick="hockeyPost()">
+              </div>
+              <div  id="posts">
 
-          <label style="color: black;"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+              </div>
 
-          <label style="color: black;"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+            </form>
+            </div>
+            </nav>
+<br>
+<br>          
+<br/>
 
-          <label style="color: black;"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+<br>
 
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px; color:black"> Remember me
-          </label>
-    
-          <p style="color: black;">By creating an account you agree to our <a href="termsAndConditions.html" style="color:dodgerblue">Terms & Privacy</a> Already have an account? <a href="signIn.html" style="color:dodgerblue;">Sign In</a></p>
-    
-          <div class="clearfix">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
-          </div>
-        </div>
-      </form>
-    </div>
- 
+<br>
 
-  <footer id="footerCrap">
+
+  <div class="stickyDiv">
+  </div>
+  <footer id="footerCrap" style="margin-bottom:0px;">
       <div class="container" id="footerStyles">
         <p>&copy; PlanAGame. All Rights Reserved.</p>
         <ul class="list-inline" id="ulCrap">
@@ -113,5 +102,6 @@
         </ul>
       </div>
     </footer>
-  </body>
+      </body>
   </html>
+  
