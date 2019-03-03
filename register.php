@@ -17,7 +17,7 @@
 			echo "connected";
 			// hash for protection.
 			//$password = md5($password);
-			$sql = "INSERT INTO UserDatabase(UserName, Email, DOB, SignUpDate,Password) Values('$username, $email,  $birth,  $password')";
+			$sql = "INSERT INTO `UserDatabase`(`UserName`, `Email`, `DOB`, `SignUpDate`, 'Password') VALUES ($username,$email,$birth,$password)";
 			mysqli_query($db, $sql);
 			echo "success";
 			$_session['message'] = "You are now logged in";
