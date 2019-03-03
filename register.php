@@ -1,7 +1,6 @@
 <?php
-    $db = mysqli_connect("localhost", "root", "", "authentication");
+    $db = mysqli_connect("localhost", "root", "PuFXrzGwUE5paP", "authentication");
     session_start();
-    <form action="register.php" method="post">
     $username = mysql_real_escape_string($_POST['userName']);
     $birth = mysql_real_escape_string($_POST['birthday']);
     $email = mysql_real_escape_string($_POST['email']);
@@ -11,7 +10,7 @@
     if ($password == $password2) {
         // hash for protection.
         $password = md5($password);
-        $sql = "INSERT INTO users(username, birthday, email, password) Values('$username, $birth, $email, $password')";
+        $sql = "INSERT INTO UserDatabase(UserName, Email, DOB, SignUpDate,Password) Values('$username, $email,  $birth,  $password')";
         mysqli_query($db, $sql);
         $_session['message'] = "You are now logged in";
         $_session['username'] = $username;
