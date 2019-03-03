@@ -1,21 +1,11 @@
 <?php
-$userName = $_POST['userName'];
-$psw = $_POST['psw'];
-$email = $_POST['email'];
-$birthday = $_POST['birthday'];
-if (!empty($userName) || !empty($psw) || !empty($birthday) || !empty($email)){
-    $host = "localhost";
-    $dbUsername = "userName";
-    $dbPassword = "psw";
-    $conn= mysqli_connect("127.0.0.1", "root", "my_password", "users");
-    $conn->query("my")
+ini_set('display_errors',1);
+try{
+    $db = mysqli_connect("127.0.1","root","PuFXrzGwUE5paP", "Planagame.com");
+    $username = mysqli_real_escape_string($db,$_POST["userName"]);
+    $txt = mysqli_rea_escape_string($db,$_POST["message"]);
+    date_default_timezone_set()
+    $postdate = date(now);
+    
 }
-if(!$conn){
-    die("connection Failed" .mysqli_connect_error());
-}
-echo "connected succesfully";
-$conn->close();
-mysqli_close($conn);
-
-
 ?>

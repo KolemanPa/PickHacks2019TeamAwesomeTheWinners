@@ -60,5 +60,5 @@ function baseballPost(){
 }
 
 function homne(){
-    document.location.href = index.html
+    document.location.href = index.html;
 }
