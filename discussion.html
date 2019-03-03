@@ -25,6 +25,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/new-age.min.css" rel="stylesheet">
+  <script src="discussion.js"></script>
 
 </head>
 
@@ -60,18 +61,19 @@
 
 
 
-  <div class="container">
-      <form class="modal-content" action="discussion.php" method="post">
+  <div class="container modal-content">
           <div class="container">
                 <input type="button" value="Football" onclick="footballPost()">
                   <input type="button" value="Basketball" onclick="basketballPost()">
                   <input type="button" value="Soccer" onclick="soccerPost()">
                   <input type="button" value="Hockey" onclick="hockeyPost()">
-                  <input type="button" value="CLICK ME" onclick="generatePosts('HELLOWJFJDL:SJFJK')">
+                  <button onclick="testStuff()">hey </button>
             </div>
-                <div onclick="generatePosts('HELLO')" id="posts">
+                <div id="posts">
                     <p>hey</p>
                 </div>
+                
+                 <form class="modal-content discussion" action="discussion.php" method="post">
                  <div class="container">   
 
                 <label style="color: black;"><b>Username</b></label>

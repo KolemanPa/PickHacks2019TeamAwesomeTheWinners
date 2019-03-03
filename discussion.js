@@ -1,6 +1,6 @@
 function footballPost(){
     var xmlhttp = new XMLHttpRequest();
-    var url = "discussion.php?sport=football";        // either https://www.dns or localhost:2020
+    var url = "localhost:3306?planagame.com=football";        // either https://www.dns or localhost:2020
     xmlhttp.onreadystatechange = function(){
         if(this.readyState === 4 && this.status === 200)
         {
@@ -11,14 +11,23 @@ function footballPost(){
     xmlhttp.send();
 }
 
+
+function testStuff(){
+    var arr2 = [1,4,6,3,6,3,4,7,6];
+    generatePosts(arr2);
+}
+
+
 function generatePosts(arr){
     if(arr){
+        var html = '';
         arr.forEach(obj => {
-            var html = `
+            html += `
                 <p> ${obj} </p>
-            `; 
-            document.getElementById('posts').innerHTML=html;
+            `;
         });
+        console.log(html);
+        document.getElementById('posts').innerHTML=html;
     }
 }
 
