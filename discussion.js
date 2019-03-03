@@ -59,3 +59,6 @@ function baseballPost(){
     xmlhttp.send();
 }
 
+function homne(){
+    document.location.href = index.html
+}
