@@ -167,3 +167,21 @@
 }
 
 .bground{background-color: rgba(139, 28, 28, 0.808)}
+
+div.ex1{
+  width: auto;
+  height: 500px;
+  overflow: auto;
+}
+
+div.signedIn{
+  background-color: rgb(113, 231, 102);
+}
+
+.wrapper{
+  min-height: 100%;
+}
+
+div.error{
+  background-color: rgb(240, 78, 78);
+}
